@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mon Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Mon Portfolio</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-500">Accueil</a>
+        <a href="a-propos.html" class="text-gray-700 hover:text-indigo-500">À propos</a>
+        <a href="portfolio.html" class="text-indigo-600 font-semibold">Portfolio</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-16 px-6 bg-gray-50">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center text-indigo-600">Mes projets</h2>
+
+      <div class="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <div class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-xl transition-shadow duration-300">
+          <img src="https://via.placeholder.com/400x200" alt="Projet 1" class="w-full h-48 object-cover">
+          <div class="p-6">
+            <h3 class="text-xl font-semibold mb-2">Titre du projet</h3>
+            <p class="text-sm text-gray-600 mb-4">Petite description rapide du projet, ce qu’il fait ou ce que tu y as appris.</p>
+            <div class="flex flex-wrap gap-2 text-xs mb-4">
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">HTML</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">CSS</span>
+              <span class="bg-indigo-100 text-indigo-700 px-2 py-1 rounded">JavaScript</span>
+            </div>
+            <a href="#" class="inline-block text-sm text-indigo-600 hover:underline">Voir le projet</a>
+          </div>
+        </div>
