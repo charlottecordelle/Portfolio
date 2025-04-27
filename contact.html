@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+</head>
+<body class="bg-white text-gray-800">
+
+  <header class="bg-white shadow-md">
+    <div class="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
+      <h1 class="text-xl font-bold text-indigo-600">Mon Portfolio</h1>
+      <nav class="space-x-6">
+        <a href="index.html" class="text-gray-700 hover:text-indigo-500">Accueil</a>
+        <a href="a-propos.html" class="text-gray-700 hover:text-indigo-500">À propos</a>
+        <a href="portfolio.html" class="text-gray-700 hover:text-indigo-500">Portfolio</a>
+        <a href="contact.html" class="text-indigo-600 font-semibold">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="py-16 px-6 bg-gray-50 min-h-screen">
+    <div class="max-w-2xl mx-auto bg-white p-8 rounded-xl shadow-md">
+      <h2 class="text-3xl font-bold mb-6 text-center text-indigo-600">Contactez-moi</h2>
+      
+      <form id="contactForm" class="space-y-6">
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-700">Nom</label>
+          <input type="text" id="name" class="w-full border border-gray-300 p-3 rounded" required>
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-700">Email</label>
+          <input type="email" id="email" class="w-full border border-gray-300 p-3 rounded" required>
+        </div>
+        <div>
+          <label class="block mb-2 text-sm font-medium text-gray-700">Message</label>
+          <textarea id="message" rows="5" class="w-full border border-gray-300 p-3 rounded" required></textarea>
+        </div>
+        <button type="submit" class="w-full bg-indigo-600 text-white p-3 rounded hover:bg-indigo-700 transition">Envoyer</button>
+      </form>
+
+      <p id="confirmationMessage" class="text-green-600 text-center mt-6 hidden">Merci pour votre message ! ✉️</p>
+    </div>
+  </section>
+
+  <script src="contact.js"></script>
+</body>
+</html>
